@@ -69,7 +69,7 @@
           id='submit'
           type="button" 
           class="btn btn-primary" 
-          onclick="$('#uni_modal button.modal-submit').click()"
+          onclick="(function() { $('#uni_modal button.modal-submit').click(); $('#uni_modal form').submit() })()"
         >
           Save
         </button>
